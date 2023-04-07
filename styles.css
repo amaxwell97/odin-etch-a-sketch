@@ -1,5 +1,11 @@
 .square {
-    border: .2em solid black;
+    border: .1em solid black;
     height: 30px;
     width: 30px;
+}
+
+#conatiner-div {
+    display: flex;
+    flex-flow: row wrap;
+    width: 540px;
 }
