@@ -1,6 +1,12 @@
 
 let mainDiv = document.getElementById('conatiner-div');
 
+for (i = 0; i < 256; i++) {
+    let div = document.createElement('div');
+    div.classList.add('square');
+    mainDiv.appendChild(div);
+}
+
 // let div = document.createElement('div');
 // div.classList.add('square');
 // mainDiv.appendChild(div);
@@ -11,12 +17,6 @@ let mainDiv = document.getElementById('conatiner-div');
 // mainDiv.appendChild(gridArray[1]);
 // mainDiv.appendChild(gridArray[2]);
 // console.log(gridArray[1]);
-
-for (i = 0; i < 32; i++) {
-    let div = document.createElement('div');
-    div.classList.add('square');
-    mainDiv.appendChild(div);
-}
 
 // function createDivs(numberOfDivs) {
 
