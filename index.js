@@ -34,6 +34,9 @@ for (i = 0; i < 256; i++) {
     })
 };
 
+// Create button that prompts the user when clicked and checks the value entered to
+// ensure it is a whole number between 2 and 100. If the number passes, the function createNewGrid is called
+
 btn.addEventListener('click', (e) => {
     let numberOfSquares = prompt('Enter the number of squares per side (100 max):');
 
@@ -53,6 +56,9 @@ btn.addEventListener('click', (e) => {
         createNewGrid(numberOfSquares);
     };
 });
+
+// createNewGrid takes the users prompt input and runs when the input has passed all tests in the event listener.
+// The function acts the same as the original grid for loop, but replaces the default 16x16 with whichever number the user entered.
 
 function createNewGrid(squares) {
     for (i = 0; i < (Math.pow(squares, 2)); i++) {
