@@ -17,19 +17,12 @@ for (i = 0; i < 256; i++) {
     let div = document.createElement('div');
     div.classList.add('square');
 
-    let squareBorderLeft = document.styleSheets[0].cssRules[0].style;
-    squareBorderLeft.border = '.1px solid black';
-
-    let squareBorderTop = document.styleSheets[0].cssRules[0].style;
-    squareBorderTop.border = '.1px solid black';
-
+    let square = document.styleSheets[0].cssRules[0].style;
     let squaresWidth = (720 / 16) - 2;
 
-    let squareClassWidth = document.styleSheets[0].cssRules[0].style;
-    squareClassWidth.setProperty('width', `${squaresWidth}px`);
-
-    let squareClassHeight = document.styleSheets[0].cssRules[0].style;
-    squareClassHeight.setProperty('height', `${squaresWidth}px`);
+    square.border = '.1px solid black';
+    square.setProperty('width', `${squaresWidth}px`);
+    square.setProperty('height', `${squaresWidth}px`);
 
     mainDiv.appendChild(div);
     div.addEventListener('mouseover', (e) => {
@@ -66,20 +59,12 @@ function createNewGrid(squares) {
         let div = document.createElement('div');
         div.classList.add('square');
 
-        let squareBorderLeft = document.styleSheets[0].cssRules[0].style;
-        squareBorderLeft.border = '.1px solid black';
-
-        let squareBorderTop = document.styleSheets[0].cssRules[0].style;
-        squareBorderTop.border = '.1px solid black';
-
+        let square = document.styleSheets[0].cssRules[0].style;
         let squaresWidth = (720 / squares) - 2;
-        console.log(squaresWidth);
 
-        let squareClassWidth = document.styleSheets[0].cssRules[0].style;
-        squareClassWidth.setProperty('width', `${squaresWidth}px`);
-
-        let squareClassHeight = document.styleSheets[0].cssRules[0].style;
-        squareClassHeight.setProperty('height', `${squaresWidth}px`);
+        square.border = '.1px solid black';
+        square.setProperty('width', `${squaresWidth}px`);
+        square.setProperty('height', `${squaresWidth}px`);
 
         mainDiv.appendChild(div);
         div.addEventListener('mouseover', (e) => {
