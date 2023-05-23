@@ -1,3 +1,8 @@
+/* body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+} */
+
 .square {
     /* border-left: .1px solid black;
     border-top: .1px solid black; */
@@ -15,11 +20,13 @@
     width: 720px;
     height: 720px;
     margin: 0 auto;
-    padding: 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 button {
-    margin: 2em 40%;
+    display: block;
+    margin: 0 auto;
     height: 50px;
     width: 200px;
 }
