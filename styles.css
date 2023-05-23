@@ -1,13 +1,21 @@
 .square {
-    border: .1em solid black;
-    height: 30px;
-    width: 30px;
+    /* border-left: .1px solid black;
+    border-top: .1px solid black; */
+    /* width: 2.5em;
+    height: 2.5em; */
+    padding: 0;
+    margin: 0;
 }
 
 #conatiner-div {
+    /* border-bottom: .1px solid black;
+    border-right: .1px solid black; */
     display: flex;
     flex-flow: row wrap;
-    width: 540px;
+    width: 720px;
+    height: 720px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 button {
